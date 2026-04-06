@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M5 Tile & Stone | Tile & Stone Installation Done Right</title>
+  <meta name="description" content="M5 Tile & Stone specializes in bathroom and kitchen tile and stone, plus floors and walls. Precision craftsmanship, no shortcuts, fair and reasonable pricing." />
+  <style>
+    :root {
+      --bg: #0f0d0b;
+      --bg-soft: #171411;
+      --card: rgba(255,255,255,0.04);
+      --card-strong: rgba(255,255,255,0.06);
+      --text: #f5f2ee;
+      --muted: #c9c1b8;
+      --line: rgba(255,255,255,0.1);
+      --accent: #d9b36a;
+      --accent-dark: #241b0a;
+      --max: 1180px;
+      --radius: 28px;
+      --shadow: 0 20px 50px rgba(0,0,0,0.28);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.09), transparent 35%),
+        linear-gradient(180deg, #171411 0%, #0f0d0b 26%, #0f0d0b 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(15, 13, 11, 0.72);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #ecd19a, #b88b3a);
+      color: #15110d;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 1.2rem;
+      border-radius: 18px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--accent);
+      color: #16120d;
+    }
+    .btn-secondary {
+      border-color: var(--line);
+      color: var(--text);
+      background: rgba(255,255,255,0.02);
+    }
+
+    section { padding: 5.5rem 0; }
+    .hero { padding-top: 4.5rem; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: .65rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(217,179,106,0.28);
+      background: rgba(217,179,106,0.08);
+      color: #efddb7;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 { margin: 0; line-height: 1.06; }
+    h1 {
+      margin-top: 1.1rem;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      letter-spacing: -0.04em;
+      max-width: 12ch;
+    }
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      letter-spacing: -0.03em;
+    }
+    p.lead {
+      margin: 1.5rem 0 0;
+      max-width: 42rem;
+      font-size: 1.13rem;
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: .9rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .stats-grid,
+    .services-grid,
+    .standards-grid,
+    .process-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.6rem;
+      box-shadow: var(--shadow);
+    }
+
+    .card.soft { background: var(--card-strong); }
+    .card h3 { font-size: 1.45rem; }
+    .kicker {
+      color: #efddb7;
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-size: .76rem;
+      font-weight: 700;
+      margin-bottom: .85rem;
+      display: block;
+    }
+
+    .section-head {
+      max-width: 48rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .muted { color: var(--muted); }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .copy p { color: var(--muted); font-size: 1.06rem; }
+
+    .services-grid {
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      margin-top: 2rem;
+    }
+
+    .standards-grid {
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      margin-top: 1rem;
+    }
+
+    .standard-item {
+      padding: 1.2rem 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      font-weight: 600;
+    }
+
+    .process-grid {
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      margin-top: 2rem;
+    }
+
+    .process-step {
+      font-size: .78rem;
+      letter-spacing: .24em;
+      color: #efddb7;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .highlight {
+      background: linear-gradient(180deg, rgba(217,179,106,0.12), rgba(217,179,106,0.06));
+      border: 1px solid rgba(217,179,106,0.22);
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .contact-card p { margin: .35rem 0; }
+
+    .contact-list {
+      margin-top: 1.1rem;
+      color: var(--muted);
+    }
+
+    .contact-list a { color: var(--text); }
+
+    .footer {
+      padding: 2rem 0 3rem;
+      color: #a89f95;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .two-col,
+      .contact-wrap,
+      .services-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid,
+      .standards-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-links { display: none; }
+      section { padding: 4.3rem 0; }
+    }
+
+    @media (max-width: 640px) {
+      .container { width: min(var(--max), calc(100% - 1.15rem)); }
+      .stats-grid,
+      .standards-grid { grid-template-columns: 1fr; }
+      .nav { padding: .85rem 0; }
+      .brand span:last-child { font-size: .95rem; }
+      .btn { width: 100%; }
+      .hero-actions { flex-direction: column; }
+      .card { padding: 1.25rem; }
+      .brand-mark { width: 38px; height: 38px; border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand">
+        <span class="brand-mark">M5</span>
+        <span>M5 TILE &amp; STONE</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#story">Our Story</a>
+        <a href="#services">Services</a>
+        <a href="#standard">The Standard</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-secondary" href="tel:+14699011975">Call Now</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Texas Rooted • Family Driven</span>
+          <h1>Tile &amp; Stone Installation Done Right.</h1>
+          <p class="lead">M5 Tile &amp; Stone specializes in bathroom and kitchen tile and stone, along with floors and walls. Every project is built with precision, proper preparation, and craftsmanship that never cuts corners.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start Your Project</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <article class="card soft">
+            <span class="kicker">Built Different</span>
+            <h3>Precision, structure, and pride applied to every square foot.</h3>
+          </article>
+          <article class="card soft">
+            <span class="kicker">Fair Pricing</span>
+            <h3>Quality work at a fair and reasonable price.</h3>
+          </article>
+          <article class="card soft">
+            <span class="kicker">No Shortcuts</span>
+            <h3>If it’s not built the right way, it doesn’t get done.</h3>
+          </article>
+          <article class="card soft">
+            <span class="kicker">For Your Home</span>
+            <h3>Clean, durable finishes designed to elevate your space.</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="container two-col">
+        <div class="copy">
+          <span class="kicker">Our Story</span>
+          <h2>More than craftsmanship. Built on family.</h2>
+          <p>The name <strong style="color:#fff;">M5</strong> represents the five McClaines. What started as a personal standard inside the home became a professional standard brought into every project.</p>
+          <p>This isn’t a production company, and it isn’t volume work. When your name is tied to your work, cutting corners is never an option.</p>
+          <p>In an industry where speed often replaces quality, M5 Tile &amp; Stone was created to do the opposite.</p>
+        </div>
+
+        <aside class="card">
+          <span class="kicker">Why Homeowners Choose M5</span>
+          <h3>Proper Preparation</h3>
+          <p class="muted">Every lasting install starts before the first tile is set.</p>
+          <h3 style="margin-top:1.25rem;">Professional Execution</h3>
+          <p class="muted">Clean lines, balanced layouts, and details that make the finished product feel custom.</p>
+          <h3 style="margin-top:1.25rem;">Long-Term Durability</h3>
+          <p class="muted">Tile is not just about appearance. It’s about structure, performance, and longevity.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" style="border-top:1px solid var(--line); border-bottom:1px solid var(--line); background: rgba(255,255,255,0.02);">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Services</span>
+          <h2>Bathroom, kitchen, floor, and wall installations built to last.</h2>
+          <p class="lead" style="margin-top:1rem;">Whether it’s a bathroom remodel, custom shower, backsplash, floor, or wall project, the goal is always the same: create something clean, durable, and built the right way.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card">
+            <h3>Bathrooms</h3>
+            <p class="muted">Custom showers, tub surrounds, bathroom floors, accent walls, and complete tile installations built with proper prep and long-term durability in mind.</p>
+          </article>
+          <article class="card">
+            <h3>Kitchens</h3>
+            <p class="muted">Backsplashes, stone and tile details, and clean kitchen finishes that bring structure, style, and easy maintenance to the heart of the home.</p>
+          </article>
+          <article class="card">
+            <h3>Floors &amp; Walls</h3>
+            <p class="muted">Precision layout, balanced lines, and professional installation for flooring and wall applications that need to look right and last.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="standard">
+      <div class="container two-col">
+        <div>
+          <span class="kicker">The Standard</span>
+          <h2>Non-negotiables on every project.</h2>
+          <p class="lead" style="margin-top:1rem;">Anyone can make something look good for a photo. Not everyone can make it last. M5 Tile &amp; Stone is built around protecting the homeowner with work that is done correctly from the ground up.</p>
+        </div>
+
+        <div class="standards-grid">
+          <div class="standard-item">No rushed prep</div>
+          <div class="standard-item">No shortcuts</div>
+          <div class="standard-item">No compromising materials</div>
+          <div class="standard-item">No cutting corners to lower cost</div>
+          <div class="standard-item">Built the right way from the start</div>
+          <div class="standard-item">Clean, durable, professional results</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line); border-bottom:1px solid var(--line); background: linear-gradient(180deg, transparent, rgba(255,255,255,0.02));">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Process</span>
+          <h2>A clean, professional experience from start to finish.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="card">
+            <div class="process-step">01</div>
+            <h3 style="margin-top:.7rem;">Consultation</h3>
+            <p class="muted">We start by understanding your space, your goals, and the finish you want so the project is built around your vision.</p>
+          </article>
+          <article class="card">
+            <div class="process-step">02</div>
+            <h3 style="margin-top:.7rem;">Preparation</h3>
+            <p class="muted">Proper prep comes first. Surface conditions, structure, and layout are handled correctly before installation begins.</p>
+          </article>
+          <article class="card">
+            <div class="process-step">03</div>
+            <h3 style="margin-top:.7rem;">Installation</h3>
+            <p class="muted">Every tile and stone detail is installed with precision, clean lines, and a focus on long-term performance.</p>
+          </article>
+          <article class="card">
+            <div class="process-step">04</div>
+            <h3 style="margin-top:.7rem;">Final Finish</h3>
+            <p class="muted">The end result is clean, polished, and built to elevate the home with craftsmanship that lasts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <article class="card highlight">
+          <span class="kicker">Who We Work With</span>
+          <h2>Built for homeowners who care about quality, durability, and getting the job done right.</h2>
+          <p class="lead" style="margin-top:1rem; max-width: 50rem; color:#e6dbcb;">This isn’t about being the cheapest option. It’s about being the most reliable one. Every project reflects integrity, consistency, and respect for the home it’s built in.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="padding-top: 0;">
+      <div class="container contact-wrap card">
+        <div>
+          <span class="kicker">Let’s Build It Right</span>
+          <h2>Ready to start your tile or stone project?</h2>
+          <p class="lead" style="margin-top:1rem;">If you’re looking for a clean, professional install that’s built to last and never rushed to finish, M5 Tile &amp; Stone is ready to deliver.</p>
+        </div>
+
+        <div class="card contact-card" style="background: rgba(0,0,0,0.18); box-shadow:none;">
+          <span class="kicker">Contact</span>
+          <h3>Justin McClaine</h3>
+          <p class="muted">Homeowners can call, email, or reach out directly to get started on a bathroom, kitchen, floor, or wall project.</p>
+          <div class="contact-list">
+            <p>Phone: <a href="tel:+14699011975">469-901-1975</a></p>
+            <p>Email: <a href="mailto:m5tiletx@gmail.com">m5tiletx@gmail.com</a></p>
+          </div>
+          <div class="hero-actions" style="margin-top:1.25rem;">
+            <a class="btn btn-primary" href="mailto:m5tiletx@gmail.com">Email Justin</a>
+            <a class="btn btn-secondary" href="tel:+14699011975">Call 469-901-1975</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> M5 Tile &amp; Stone. All rights reserved.</div>
+      <div>Texas Rooted. Family Driven.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
