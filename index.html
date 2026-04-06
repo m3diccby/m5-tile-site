@@ -1,208 +1,144 @@
-export default function M5TileStoneWebsite() {
-  const services = [
-    {
-      title: "Bathrooms",
-      text: "Custom showers, tub surrounds, bathroom floors, and full tile installations executed with clean lines and long-term durability.",
-    },
-    {
-      title: "Kitchens",
-      text: "Backsplashes, statement stone details, and refined finishes that elevate the look and feel of the space.",
-    },
-    {
-      title: "Floors & Walls",
-      text: "Precision layout, proper preparation, and balanced installation for surfaces that need to look exceptional and last.",
-    },
-  ];
+<!DOCTYPE html>
 
-  const standards = [
-    "Proper prep before installation",
-    "No shortcuts or rushed work",
-    "Clean lines and balanced layouts",
-    "Built for durability and longevity",
-  ];
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M5 Tile & Stone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-  return (
-    <div className="min-h-screen bg-[#f8f5ef] text-[#1f1a17]">
-      <section className="border-b border-black/5 bg-gradient-to-b from-[#f3eee5] to-[#f8f5ef]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
-            <div>
-              <p className="inline-flex rounded-full border border-[#b08d57]/25 bg-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">
-                Texas Rooted • Family Driven
-              </p>
-              <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
-                Luxury-Level Tile & Stone Installation, Done Right.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5c5148] md:text-xl">
-                M5 Tile & Stone specializes in bathrooms, kitchens, floors, and walls with a focus on precision, proper preparation, and craftsmanship that never cuts corners.
-              </p>
-              <p className="mt-4 text-sm font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">
-                Serving Irving, Dallas & surrounding areas
-              </p>
+<body class="bg-[#f8f5ef] text-[#1f1a17]">
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#contact"
-                  className="rounded-2xl bg-[#b08d57] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-[#b08d57]/20 transition hover:-translate-y-0.5"
-                >
-                  Start Your Free Estimate
-                </a>
-                <a
-                  href="tel:+14699011975"
-                  className="rounded-2xl border border-[#b08d57]/25 bg-white/70 px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#1f1a17] transition hover:bg-white"
-                >
-                  Call for Free Estimate
-                </a>
-              </div>
-            </div>
+<!-- HERO -->
 
-            <div className="grid gap-5 sm:grid-cols-2">
-              <div className="rounded-[2rem] border border-black/5 bg-white p-8 shadow-[0_24px_60px_rgba(0,0,0,0.06)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">Built Different</p>
-                <p className="mt-4 text-2xl font-semibold leading-snug">
-                  Precision, structure, and pride in every square foot.
-                </p>
-              </div>
-              <div className="rounded-[2rem] border border-black/5 bg-[#1f1a17] p-8 text-white shadow-[0_24px_60px_rgba(0,0,0,0.14)] sm:translate-y-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#d6b27a]">No Shortcuts</p>
-                <p className="mt-4 text-2xl font-semibold leading-snug">
-                  If it’s not built the right way, it doesn’t get done.
-                </p>
-              </div>
-              <div className="rounded-[2rem] border border-black/5 bg-white p-8 shadow-[0_24px_60px_rgba(0,0,0,0.06)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">Premium Finish</p>
-                <p className="mt-4 text-2xl font-semibold leading-snug">
-                  Clean lines, refined layouts, and long-lasting performance.
-                </p>
-              </div>
-              <div className="rounded-[2rem] border border-black/5 bg-white p-8 shadow-[0_24px_60px_rgba(0,0,0,0.06)] sm:translate-y-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">Fair Pricing</p>
-                <p className="mt-4 text-2xl font-semibold leading-snug">
-                  Quality craftsmanship at a fair and reasonable price.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="px-6 py-24 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+  <div>
+    <p class="text-xs uppercase tracking-widest text-[#8b6b3f] font-semibold">
+      Texas Rooted • Family Driven
+    </p>
 
-      <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
-        <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr]">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">Our Story</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              More than craftsmanship. Built on family.
-            </h2>
-            <div className="mt-6 space-y-6 text-lg leading-8 text-[#5c5148]">
-              <p>
-                The name <span className="font-semibold text-[#1f1a17]">M5</span> represents the five McClaines. What began as a personal standard at home became the professional standard behind every project.
-              </p>
-              <p>
-                This is not production work. This is not volume work. When your name is tied to the result, cutting corners is never an option.
-              </p>
-              <p>
-                Every install is approached with intention, structure, and respect for the home it is built in.
-              </p>
-            </div>
-          </div>
+```
+<h1 class="mt-4 text-4xl md:text-6xl font-semibold leading-tight">
+  Luxury-Level Tile & Stone Installation, Done Right.
+</h1>
 
-          <div className="rounded-[2rem] border border-black/5 bg-white p-10 shadow-[0_24px_60px_rgba(0,0,0,0.06)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">The Standard</p>
-            <div className="mt-8 grid gap-4">
-              {standards.map((item) => (
-                <div key={item} className="rounded-2xl border border-[#b08d57]/12 bg-[#faf7f1] px-5 py-4 text-base font-medium text-[#2d2521]">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+<p class="mt-6 text-lg text-[#5c5148] max-w-xl">
+  Bathrooms, kitchens, floors, and walls installed with precision, proper preparation, and craftsmanship that never cuts corners.
+</p>
 
-      <section className="border-y border-black/5 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">Services</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              Bathrooms, kitchens, floors, and walls built with premium-level care.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-[#5c5148]">
-              Whether it’s a custom shower, backsplash, statement wall, or flooring project, the goal stays the same: create something clean, durable, and worthy of the home it’s in.
-            </p>
-          </div>
+<p class="mt-4 text-sm uppercase tracking-widest text-[#8b6b3f] font-semibold">
+  Serving Irving, Dallas & surrounding areas
+</p>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {services.map((service) => (
-              <div key={service.title} className="rounded-[2rem] border border-black/5 bg-[#faf7f1] p-8 shadow-[0_20px_40px_rgba(0,0,0,0.04)]">
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
-                <p className="mt-4 leading-8 text-[#5c5148]">{service.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+<div class="mt-8 flex flex-col sm:flex-row gap-4">
+  <a href="#contact" class="bg-[#b08d57] text-white px-6 py-3 rounded-xl font-semibold text-center">
+    Start Your Free Estimate
+  </a>
+  <a href="tel:+14699011975" class="border border-[#b08d57] px-6 py-3 rounded-xl font-semibold text-center">
+    Call for Free Estimate
+  </a>
+</div>
+```
 
-      <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
-        <div className="rounded-[2.25rem] border border-[#b08d57]/15 bg-gradient-to-r from-[#1f1a17] to-[#332a24] px-8 py-12 text-white md:px-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d6b27a]">Service Area</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            Serving homeowners across Irving, Dallas, Duncanville, Cedar Hill, Desoto, Midlothian, and surrounding areas.
-          </h2>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">
-            M5 Tile & Stone is built for homeowners who value quality, durability, and a finish that feels clean, timeless, and professionally executed.
-          </p>
-        </div>
-      </section>
+  </div>
 
-      <section id="contact" className="border-t border-black/5 bg-[#efe7da]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10">
-          <div className="grid gap-10 rounded-[2.25rem] border border-black/5 bg-white p-10 shadow-[0_24px_60px_rgba(0,0,0,0.06)] md:grid-cols-[1fr_0.9fr] md:p-14">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8b6b3f]">Let’s Build It Right</p>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-                Ready to start your tile or stone project?
-              </h2>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5c5148]">
-                Reach out today for a free estimate and get a clean, professional installation built to last.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] bg-[#1f1a17] p-8 text-white">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#d6b27a]">Contact</p>
-              <p className="mt-4 text-2xl font-semibold">Justin McClaine</p>
-              <div className="mt-6 space-y-3 text-white/80">
-                <p>
-                  Phone: <a className="text-white" href="tel:+14699011975">469-901-1975</a>
-                </p>
-                <p>
-                  Email: <a className="text-white" href="mailto:m5tiletx@gmail.com">m5tiletx@gmail.com</a>
-                </p>
-              </div>
-              <div className="mt-8 flex flex-col gap-4">
-                <a
-                  href="mailto:m5tiletx@gmail.com"
-                  className="rounded-2xl bg-[#b08d57] px-6 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-white"
-                >
-                  Email for Free Estimate
-                </a>
-                <a
-                  href="tel:+14699011975"
-                  className="rounded-2xl border border-white/15 px-6 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-white"
-                >
-                  Call for Free Estimate
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <a
-        href="tel:+14699011975"
-        className="fixed bottom-4 left-4 right-4 z-50 rounded-2xl bg-[#b08d57] px-6 py-4 text-center text-base font-semibold text-white shadow-2xl shadow-black/20 md:hidden"
-      >
-        Call Now for Free Estimate • 469-901-1975
-      </a>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <p class="text-xs uppercase text-[#8b6b3f]">Built Different</p>
+      <p class="mt-2 font-semibold">Precision in every square foot.</p>
     </div>
-  );
-}
+    <div class="bg-[#1f1a17] text-white p-6 rounded-2xl shadow">
+      <p class="text-xs uppercase text-[#d6b27a]">No Shortcuts</p>
+      <p class="mt-2 font-semibold">Built the right way or not at all.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <p class="text-xs uppercase text-[#8b6b3f]">Premium Finish</p>
+      <p class="mt-2 font-semibold">Clean, balanced layouts.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <p class="text-xs uppercase text-[#8b6b3f]">Fair Pricing</p>
+      <p class="mt-2 font-semibold">Quality at a fair price.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-semibold mb-10 text-center">
+      Services
+    </h2>
+
+```
+<div class="grid md:grid-cols-3 gap-8">
+  <div class="bg-[#faf7f1] p-6 rounded-2xl">
+    <h3 class="text-xl font-semibold">Bathrooms</h3>
+    <p class="mt-2 text-[#5c5148]">Custom showers and full remodel tile work built to last.</p>
+  </div>
+
+  <div class="bg-[#faf7f1] p-6 rounded-2xl">
+    <h3 class="text-xl font-semibold">Kitchens</h3>
+    <p class="mt-2 text-[#5c5148]">Backsplashes and clean finishes that elevate your space.</p>
+  </div>
+
+  <div class="bg-[#faf7f1] p-6 rounded-2xl">
+    <h3 class="text-xl font-semibold">Floors & Walls</h3>
+    <p class="mt-2 text-[#5c5148]">Precision installs done right the first time.</p>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+
+<section class="py-20 max-w-6xl mx-auto px-6 text-center">
+  <h2 class="text-3xl font-semibold">
+    Built for homeowners who want it done right.
+  </h2>
+  <p class="mt-4 text-[#5c5148]">
+    Serving Irving, Dallas, Duncanville, Cedar Hill, Desoto, Midlothian, and surrounding areas.
+  </p>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="bg-[#1f1a17] text-white py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-semibold">Let’s Build It Right</h2>
+
+```
+<p class="mt-4 text-gray-300">
+  Reach out today for your free estimate.
+</p>
+
+<div class="mt-6 space-y-2">
+  <p class="font-semibold">Justin McClaine</p>
+  <p>469-901-1975</p>
+  <p>m5tiletx@gmail.com</p>
+</div>
+
+<div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+  <a href="mailto:m5tiletx@gmail.com" class="bg-[#b08d57] px-6 py-3 rounded-xl font-semibold">
+    Email for Free Estimate
+  </a>
+  <a href="tel:+14699011975" class="border border-white px-6 py-3 rounded-xl font-semibold">
+    Call for Free Estimate
+  </a>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- STICKY CALL -->
+
+<a href="tel:+14699011975"
+class="fixed bottom-4 left-4 right-4 bg-[#b08d57] text-white text-center py-4 rounded-xl font-bold shadow-xl md:hidden">
+Call Now for Free Estimate • 469-901-1975 </a>
+
+</body>
+</html>
