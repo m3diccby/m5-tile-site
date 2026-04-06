@@ -1,292 +1,100 @@
-export default function M5TileStoneWebsite() {
-  const services = [
-    {
-      title: "Bathrooms",
-      description:
-        "Custom showers, tub surrounds, bathroom floors, accent walls, and complete tile installations built with proper prep and long-term durability in mind.",
-    },
-    {
-      title: "Kitchens",
-      description:
-        "Backsplashes, stone and tile details, and clean kitchen finishes that bring structure, style, and easy maintenance to the heart of the home.",
-    },
-    {
-      title: "Floors & Walls",
-      description:
-        "Precision layout, balanced lines, and professional installation for flooring and wall applications that need to look right and last.",
-    },
-  ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M5 Tile & Stone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-  const standards = [
-    "No rushed prep",
-    "No shortcuts",
-    "No compromising materials",
-    "No cutting corners to lower cost",
-    "Built the right way from the start",
-    "Clean, durable, professional results",
-  ];
+<body class="bg-stone-950 text-stone-100">
 
-  const process = [
-    {
-      step: "01",
-      title: "Consultation",
-      text: "We start by understanding your space, your goals, and the finish you want so the project is built around your vision.",
-    },
-    {
-      step: "02",
-      title: "Preparation",
-      text: "Proper prep comes first. Surface conditions, structure, and layout are handled correctly before installation begins.",
-    },
-    {
-      step: "03",
-      title: "Installation",
-      text: "Every tile and stone detail is installed with precision, clean lines, and a focus on long-term performance.",
-    },
-    {
-      step: "04",
-      title: "Final Finish",
-      text: "The end result is clean, polished, and built to elevate the home with craftsmanship that lasts.",
-    },
-  ];
+<!-- HERO -->
+<section class="px-6 py-20 max-w-6xl mx-auto">
+  <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+    Tile & Stone Installation Done Right.
+  </h1>
 
-  return (
-    <div className="min-h-screen bg-stone-950 text-stone-100">
-      <section className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_40%)]">
-        <div className="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-950" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <div className="grid items-center gap-14 lg:grid-cols-2">
-            <div>
-              <div className="mb-6 inline-flex items-center rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-2 text-sm tracking-[0.2em] text-amber-200 uppercase">
-                Texas Rooted • Family Driven
-              </div>
-              <h1 className="max-w-3xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
-                Tile & Stone Installation Done Right.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-300 md:text-xl">
-                M5 Tile & Stone specializes in bathroom and kitchen tile and stone, along with floors and walls. Every project is built with precision, proper preparation, and craftsmanship that never cuts corners.
-              </p>
-              <p className="mt-3 text-sm uppercase tracking-[0.25em] text-amber-200">
-                Serving Irving, Dallas & surrounding areas
-              </p>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-300 md:text-xl">
-              </p>
-              <div className="mt-6 space-y-2 text-stone-300">
-                <p>Phone: <a href="tel:+14699011975" className="text-white hover:text-amber-200">469-901-1975</a></p>
-                <p>Email: <a href="mailto:m5tiletx@gmail.com" className="text-white hover:text-amber-200">m5tiletx@gmail.com</a></p>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="#contact"
-                  className="rounded-2xl bg-amber-400 px-6 py-3 text-sm font-semibold text-stone-950 transition hover:scale-[1.02]"
-                >
-                  Start Your Free Estimate
-                </a>
-                <a
-                  href="#services"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold text-stone-100 transition hover:bg-white/5"
-                >
-                  View Services
-                </a>
-              </div>
-            </div>
+  <p class="mt-4 text-lg text-stone-300">
+    M5 Tile & Stone specializes in bathroom and kitchen tile and stone, along with floors and walls. Every project is built with precision and never cuts corners.
+  </p>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                <div className="text-sm uppercase tracking-[0.25em] text-amber-200">Built Different</div>
-                <p className="mt-4 text-2xl font-medium leading-snug text-white">
-                  Precision, structure, and pride applied to every square foot.
-                </p>
-              </div>
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:translate-y-8">
-                <div className="text-sm uppercase tracking-[0.25em] text-amber-200">Fair Pricing</div>
-                <p className="mt-4 text-2xl font-medium leading-snug text-white">
-                  Quality work at a fair and reasonable price.
-                </p>
-              </div>
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                <div className="text-sm uppercase tracking-[0.25em] text-amber-200">No Shortcuts</div>
-                <p className="mt-4 text-2xl font-medium leading-snug text-white">
-                  If it’s not built the right way, it doesn’t get done.
-                </p>
-              </div>
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:translate-y-8">
-                <div className="text-sm uppercase tracking-[0.25em] text-amber-200">For Your Home</div>
-                <p className="mt-4 text-2xl font-medium leading-snug text-white">
-                  Clean, durable finishes designed to elevate your space.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <p class="mt-3 text-sm uppercase tracking-widest text-amber-300">
+    Serving Irving, Dallas & surrounding areas
+  </p>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">Our Story</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              More than craftsmanship. Built on family.
-            </h2>
-            <div className="mt-6 space-y-6 text-lg leading-8 text-stone-300">
-              <p>
-                The name <span className="font-semibold text-white">M5</span> represents the five McClaines. What started as a personal standard inside the home became a professional standard brought into every project.
-              </p>
-              <p>
-                This isn’t a production company, and it isn’t volume work. When your name is tied to your work, cutting corners is never an option.
-              </p>
-              <p>
-                In an industry where speed often replaces quality, M5 Tile & Stone was created to do the opposite.
-              </p>
-            </div>
-          </div>
+  <div class="mt-6 flex gap-4">
+    <a href="#contact" class="bg-amber-400 text-black px-6 py-3 rounded-xl font-semibold">
+      Start Your Free Estimate
+    </a>
+    <a href="tel:+14699011975" class="border border-white px-6 py-3 rounded-xl">
+      Call for Free Estimate
+    </a>
+  </div>
+</section>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-2xl shadow-black/20">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">Why Homeowners Choose M5</p>
-            <div className="mt-8 space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-white">Proper Preparation</h3>
-                <p className="mt-2 leading-7 text-stone-300">Every lasting install starts before the first tile is set.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white">Professional Execution</h3>
-                <p className="mt-2 leading-7 text-stone-300">Clean lines, balanced layouts, and details that make the finished product feel custom.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white">Long-Term Durability</h3>
-                <p className="mt-2 leading-7 text-stone-300">Tile is not just about appearance. It’s about structure, performance, and longevity.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- SERVICES -->
+<section class="px-6 py-16 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-8">Services</h2>
 
-      <section id="services" className="border-y border-white/10 bg-white/[0.03]">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">Services</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Bathroom, kitchen, floor, and wall installations built to last.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-stone-300">
-              Whether it’s a bathroom remodel, custom shower, backsplash, floor, or wall project, the goal is always the same: create something clean, durable, and built the right way.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="rounded-[2rem] border border-white/10 bg-stone-900/70 p-8 transition hover:-translate-y-1 hover:border-amber-300/30"
-              >
-                <h3 className="text-2xl font-semibold text-white">{service.title}</h3>
-                <p className="mt-4 leading-8 text-stone-300">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">The Standard</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Non-negotiables on every project.
-            </h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-300">
-              Anyone can make something look good for a photo. Not everyone can make it last. M5 Tile & Stone is built around protecting the homeowner with work that is done correctly from the ground up.
-            </p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {standards.map((item) => (
-              <div
-                key={item}
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 text-lg font-medium text-stone-100"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-gradient-to-b from-transparent to-white/[0.03]">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">Process</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              A clean, professional experience from start to finish.
-            </h2>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {process.map((item) => (
-              <div key={item.step} className="rounded-[2rem] border border-white/10 bg-stone-900/60 p-8">
-                <div className="text-sm font-semibold tracking-[0.25em] text-amber-200">{item.step}</div>
-                <h3 className="mt-4 text-2xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-4 leading-8 text-stone-300">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="rounded-[2rem] border border-amber-300/20 bg-amber-300/10 p-10 md:p-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-100">Who We Work With</p>
-          <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Built for homeowners who care about quality, durability, and getting the job done right.
-          </h2>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-stone-300">
-            Serving Irving, Dallas, Duncanville, Cedar Hill, Desoto, Midlothian, and surrounding areas.
-          </p>
-          <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white md:text-5xl">
-          </h2>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-200">
-            This isn’t about being the cheapest option. It’s about being the most reliable one. Every project reflects integrity, consistency, and respect for the home it’s built in.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-          <div className="grid gap-10 rounded-[2rem] border border-white/10 bg-white/[0.03] p-10 md:grid-cols-[1.1fr_0.9fr] md:p-14">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">Let’s Build It Right</p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-                Ready to start your tile or stone project?
-              </h2>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-300">
-                If you’re looking for a clean, professional install that’s built to last and never rushed to finish, M5 Tile & Stone is ready to deliver.
-              </p>
-            </div>
-            <div className="rounded-[2rem] border border-white/10 bg-stone-950/60 p-8">
-              <div className="space-y-4 text-stone-200">
-                <p className="text-sm uppercase tracking-[0.25em] text-amber-200">Contact</p>
-                <p className="text-lg font-medium text-white">Justin McClaine</p>
-                <p className="text-xl font-semibold text-white">Reach out today to start your project.</p>
-                <p className="leading-7 text-stone-300">
-                  Homeowners can call, email, or reach out directly to get started on a bathroom, kitchen, floor, or wall project.
-                </p>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a href="mailto:m5tiletx@gmail.com" className="rounded-2xl bg-white px-5 py-3 font-semibold text-stone-950 transition hover:scale-[1.02]">
-                  Email for Free Estimate
-                </a>
-                <a href="tel:+14699011975" className="rounded-2xl border border-white/15 px-5 py-3 font-semibold text-white transition hover:bg-white/5">
-                  Call for Free Estimate
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-          {/* Sticky Call Now Button (Mobile) */}
-      <a
-        href="tel:+14699011975"
-        className="fixed bottom-4 left-4 right-4 z-50 rounded-2xl bg-amber-400 px-6 py-4 text-center text-base font-semibold text-stone-950 shadow-2xl shadow-black/30 md:hidden"
-      >
-        Call Now for Free Estimate • 469-901-1975
-      </a>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div>
+      <h3 class="text-xl font-bold">Bathrooms</h3>
+      <p class="text-stone-300 mt-2">Custom showers, floors, and full remodel tile work built to last.</p>
     </div>
-  );
-}
+
+    <div>
+      <h3 class="text-xl font-bold">Kitchens</h3>
+      <p class="text-stone-300 mt-2">Backsplashes and clean finishes that elevate your space.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">Floors & Walls</h3>
+      <p class="text-stone-300 mt-2">Precision layouts and durable installs done right.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="px-6 py-16 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-semibold">
+    Built for homeowners who want it done right.
+  </h2>
+
+  <p class="mt-4 text-stone-300">
+    Serving Irving, Dallas, Duncanville, Cedar Hill, Desoto, Midlothian, and surrounding areas.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 py-20 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-semibold">Let’s Build It Right</h2>
+
+  <p class="mt-4 text-stone-300">
+    Ready to start your tile or stone project? Reach out for a free estimate.
+  </p>
+
+  <div class="mt-6 space-y-2">
+    <p><strong>Justin McClaine</strong></p>
+    <p>Phone: <a href="tel:+14699011975">469-901-1975</a></p>
+    <p>Email: <a href="mailto:m5tiletx@gmail.com">m5tiletx@gmail.com</a></p>
+  </div>
+
+  <div class="mt-6 flex gap-4">
+    <a href="mailto:m5tiletx@gmail.com" class="bg-white text-black px-6 py-3 rounded-xl font-semibold">
+      Email for Free Estimate
+    </a>
+    <a href="tel:+14699011975" class="border border-white px-6 py-3 rounded-xl">
+      Call for Free Estimate
+    </a>
+  </div>
+</section>
+
+<!-- STICKY CALL BUTTON -->
+<a href="tel:+14699011975"
+   class="fixed bottom-4 left-4 right-4 bg-amber-400 text-black text-center py-4 rounded-xl font-bold shadow-xl md:hidden">
+   Call Now for Free Estimate • 469-901-1975
+</a>
+
+</body>
+</html>
